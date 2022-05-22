@@ -1,0 +1,560 @@
+*{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.menu{
+    z-index: 4;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #ffff;
+}
+
+.img_menu{
+    margin-left: 5px;
+}
+
+.img_menu img{
+    width: 50px;
+}
+
+.menu ul li{
+    display: inline; 
+    list-style: none;
+    padding: 25px 20px;
+    transition: 0.5s;
+}
+
+.menu ul li:hover{
+    box-shadow:  0 5px 0 0 rgb(95, 95, 185);
+}
+
+.menu ul li:hover > a{
+    color:rgb(95, 95, 185);
+}
+
+.menu ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+}
+
+.social_menu{
+    margin-right: 5px;
+}
+
+.social_menu div img{
+    height: 25px;
+    width: 35px;
+}
+
+.social_menu div{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: gray;
+}
+
+.social_menu .facebook_menu:hover{
+    background-color: blue;
+}
+
+.social_menu .instagram_menu:hover{
+    background-color: rgb(240, 79, 106);
+}
+
+.social_menu .youtube_menu:hover{
+    background-color: red;
+}
+
+.social_menu div:hover > img{
+    transform: scale(1.2);
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger button{
+    background: transparent;
+    height: 40px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger button img{
+    height: 80%;
+    width: 80%;
+}
+
+.area_carousel{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.carousel{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel img{
+    object-fit: auto;
+    height: 100%;
+    width: 100vw;
+    min-width: 100vw;
+    transform: translateX(150vw);
+    transition: 0.5s;
+}
+
+.setas{
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.seta_direita{
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.seta_esquerda{
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.seta_direita img{
+    height: 50px;
+    width: 50px;
+}
+
+.seta_esquerda img{
+    height: 50px;
+    width: 50px;
+}
+
+.labels{
+    position: absolute;
+    top: 80%;
+}
+
+.area_carousel input{
+    display: none;
+}
+
+.labels label{
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+
+label[for=radio1]{
+    background-color: #ffff;
+}
+
+.labels label:not(:last-child){
+    margin-right: 20px;
+}
+
+.container_info{
+    margin-top: -60px;
+    flex-direction: column;
+}
+
+.container_igreja{
+    position: relative;
+    background-color: #ffff;
+    width: 80vw;
+}
+
+.sobre_past{
+    padding: 80px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.past span{
+    padding: 0 30px;
+    font-size: 35px;
+}
+
+.img_past{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.img_past img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+.social_past img{
+    width: 30px;
+    height: 30px;
+}
+
+.social_past a div{
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #b8b8b8;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+.social_past a div:hover{
+    border: 2px solid #000; 
+}
+
+.line{
+    padding: 6px ;
+    margin-bottom: 30px;
+}
+
+.line span{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+}
+
+.line_1{
+    margin-right: 15px;
+    box-shadow: 0px 0px 0px 0.3px #000;
+    width: 100%;
+}
+
+.line_2{
+    margin-left: 15px;
+    box-shadow: 0px 0px 0px 0.3px #000;
+    width: 100%;
+}
+
+.area_ig span:last-child{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.area_ig span{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.area_ig{
+    justify-content: start;
+    background: white;
+    height: 500px;
+    width: 100%;
+    box-shadow: 4px 0px 4px 2px rgb(231, 172, 172);
+}
+
+.area_ig:hover{
+    color: royalblue;
+    transition: 0.5s;
+}
+
+.ig{
+    min-height: 40%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background: rgb(248, 218, 218);
+}
+
+.info_cultos{
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.info_cultos div{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    margin: 0;
+    margin-bottom: 22.5vh;
+}
+
+.info_cultos .area_ig{
+    margin: 15px;
+    margin-bottom: 50px;
+}
+
+.agenda{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.agenda a{
+    text-decoration: none;
+}
+
+.container_pas{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container_pas .service_box{
+    position: relative;
+    width: 350px;
+    height: 320px;
+    background: royalblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container_pas .service_box .icon_pas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.container_pas .service_box:hover .icon_pas{
+    top: 30px;
+    left: calc(50% - 55px);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+}
+
+.container_pas .service_box .content{
+    margin-top: 48%;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.container_pas .service_box .content h1{
+    margin-bottom: 30px;
+}
+
+.container_pas .service_box .icons_social_pas{
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    transform: translateX(-15px);
+}
+
+.container_pas .service_box .icons_social_pas li{
+    list-style: none;
+}
+
+.container_pas .service_box .icons_social_pas li a{
+    margin: 0 15px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.container_pas .service_box .icons_social_pas li a:hover{
+     transform: translateY(-10px);
+}
+
+.informacao{
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.informacao a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.informacao a:hover{
+    color: blue;
+    transition: 0.5s;
+}
+
+.icons_social{
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    transform: translateX(-15px);
+}
+
+.icons_social li{
+    list-style: none;
+}
+
+.icons_social li a{
+    margin: 0 15px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.icons_social li a:hover{
+    transform: translateY(-10px);
+}
+
+.autor{
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+}
+
+.logo_rodape{
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: rgb(41, 37, 37)
+}
+
+.navbar{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.flex_box{
+    display: flex;
+}
+
+.x_centralizar{
+    justify-content: center;
+}
+
+.y_centralizar{
+    align-items: center;
+}
+
+@media screen and (max-width: 772px){
+    .menu ul{
+        display: none;
+    }
+    
+    .menu .social_menu{
+        display: none;
+    }
+    
+    .hamburger{
+        display: flex;
+    }
+
+    .container_info{
+        width: 100%;
+    }
+    .container_igreja{
+        width: 90vw;
+    }
+    
+    .container_sobre{
+        flex-direction: column;
+    }
+    
+    .sobre_past{
+        flex-direction: column;
+    }
+    
+    .past{
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .past span{
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .social_past{
+        justify-content: center;
+    }
+    
+    .container_pas{
+        position: relative;
+        margin: 0 auto;
+        max-width: 336px;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    .navbar{
+        display: none;
+        position: fixed;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(12, 12, 12, 0.9);
+        z-index: 3;
+    }
+    
+    .container_navbar{
+        position: relative;
+        margin-top: 81px;
+        width: 60vw;
+        height: 100vh;
+        background-color: #ffff;
+    }
+    
+    .container_navbar ul{
+        padding: 30px;
+    }
+    
+    .container_navbar ul li{
+        list-style: none;
+        margin-top: 25px;
+        transition: 0.5s;
+    }
+    
+    .container_navbar ul li a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .container_navbar ul li:hover{
+        transform: translateX(10px);
+    }
+
+    footer{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 395px){
+    .container_pas .service_box .content{
+        margin-top: 58%;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+    }
+}

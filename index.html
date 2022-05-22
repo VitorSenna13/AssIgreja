@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembléia de Deus Ministério XV de Novembro</title>
+    <link rel="shortcut icon" href="imagens/logotipo menu.png">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JavaScript/index.js" defer></script>
+    <script src="JavaScript/carousel.js" defer></script>
+</head>
+
+<body>
+
+    <!--Começo Menu-->
+    <div class="menu flex_box y_centralizar">
+
+        <div class="img_menu">
+            <img src="Imagens/logotipo menu.png" alt="">
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Videos.html">Videos</a></li>
+            <li><a href="Fotos.html">Fotos</a></li>
+            <li><a href="Endereco.html">Endereços</a></li>
+        </ul>
+
+        <div class="social_menu flex_box">
+            <a href="#">
+                <div class="facebook_menu flex_box x_centralizar y_centralizar">
+                    <img src="Icones/Menu/facebook.svg" alt="">
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="instagram_menu flex_box x_centralizar y_centralizar">
+                    <img src="Icones/Menu/instagram.svg" alt="">
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="youtube_menu flex_box x_centralizar y_centralizar">
+                    <img src="Icones/Menu/youtube.svg" alt="">
+                </div>
+            </a>
+        </div>
+
+        <div class="hamburger y_centralizar">
+            <button><img src="Icones/Mobile/Hamburger.svg" alt=""></button>
+        </div>
+
+    </div>
+
+    <div class="navbar">
+        <div class="container_navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Videos.html">Videos</a></li>
+                <li><a href="Fotos.html">Fotos</a></li>
+                <li><a href="Endereco.html">Endereços</a></li>
+            </ul>
+
+            <div class="social_menu flex_box x_centralizar">
+                <a href="#">
+                    <div class="facebook_menu flex_box x_centralizar y_centralizar">
+                        <img src="Icones/Menu/facebook.svg" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="instagram_menu flex_box x_centralizar y_centralizar">
+                        <img src="Icones/Menu/instagram.svg" alt="">
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="youtube_menu flex_box x_centralizar y_centralizar">
+                        <img src="Icones/Menu/youtube.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Fim Menu-->
+
+    <!--Começo Carousel-->
+
+    <div class="area_carousel y_centralizar x_centralizar">
+
+        <div class="carousel y_centralizar x_centralizar">
+
+            <img src="Imagens/Carousel/imagem1.jpg" alt="">
+
+            <img src="Imagens/Carousel/imagem2.jpg" alt="">
+
+            <img src="Imagens/Carousel/imagem3.jpg" alt="">
+
+            <img src="Imagens/Carousel/imagem4.jpg" alt="">
+
+        </div>
+
+        <div class="setas flex_box">
+
+            <div class="seta_esquerda" onclick="seta_esquerda()">
+                <img src="Icones/Carousel/seta esquerda.svg" alt="">
+            </div>
+
+            <div class="seta_direita" onclick="seta_direita()">
+                <img src="Icones/Carousel/seta direita.svg" alt="">
+            </div>
+
+        </div>
+
+        <input type="radio" checked name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="labels">
+            <label for="radio1" onclick="mudar_carousel1()"></label>
+            <label for="radio2" onclick="mudar_carousel2()"></label>
+            <label for="radio3" onclick="mudar_carousel3()"></label>
+            <label for="radio4" onclick="mudar_carousel4()"></label>
+        </div>
+
+    </div>
+
+    <!--Fim Carousel-->
+
+    <div class="container_info flex_box y_centralizar">
+
+        <div class="container_igreja">
+
+            <!--Começo: Informações sobre as Redes Sociais da Pastora-->
+
+            <div class="sobre_past flex_box">
+
+                <div class="past flex_box y_centralizar">
+                    <div class="img_past flex_box x_centralizar y_centralizar">
+                        <img src="Imagens/logotipo menu.png" alt="">
+                    </div>
+
+                    <span>#######</span>
+                </div>
+
+                <div class="social_past flex_box y_centralizar">
+
+                    <a href="#">
+                        <div class="facebook_past flex_box x_centralizar y_centralizar">
+                            <img src="Icones/Conteúdo/facebook Dark.svg" alt="">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="instagram_past flex_box x_centralizar y_centralizar">
+                            <img src="Icones/Conteúdo/instagram Dark.svg" alt="">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="youtube_past flex_box x_centralizar y_centralizar">
+                            <img src="Icones/Conteúdo/youtube Dark.svg" alt="">
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!--Fim (Começo: Informações sobre as Redes Sociais da Pastora)-->
+
+            <div class="line flex_box x_centralizar y_centralizar">
+                <div class="line_1"></div>
+                <span>Cultos</span>
+                <div class="line_2"></div>
+            </div>
+
+            <section class="info_cultos flex_box">
+
+                <div class="area_ig flex_box">
+
+
+                    <div class=" ig flex_box x_centralizar y_centralizar">
+                        <span>Domingo - 18:30 h</span>
+                        <span>Culto da Familia</span>
+                    </div>
+
+                    <div class="info_area_ig">
+
+                    </div>
+
+                </div>
+
+                <div class="area_ig flex_box">
+
+                    <div class=" ig flex_box x_centralizar y_centralizar">
+                        <span>Sexta-Feira - 19:30 h</span>
+                        <span>Culto de Libertação</span>
+                    </div>
+
+                    <div class="info_area_ig">
+
+                    </div>
+
+                </div>
+
+                <div class="area_ig flex_box">
+
+                    <div class=" ig flex_box x_centralizar y_centralizar">
+                        <span>Quarta-Feira - 19:30 h</span>
+                        <span>Culto de Ensino</span>
+                    </div>
+
+                    <div class="info_area_ig">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="agenda">
+                <a href="#">Ver Agenda -></a>
+            </div>
+
+            <div class="line flex_box x_centralizar y_centralizar">
+                <div class="line_1"></div>
+                <span>Pastores Presidentes</span>
+                <div class="line_2"></div>
+            </div>
+
+            <div class="past_president">
+
+                <div class="container_pas flex_box y_centralizar x_centralizar">
+                    <div class="service_box">
+                        <div class="icon_pas flex_box y_centralizar x_centralizar" style="--i: url(../Imagens/Carousel/imagem1.jpg)">
+                        </div>
+                        <div class="content">
+                            <h1>#######</h1>
+                            <ul class="icons_social_pas flex_box y_centralizar x_centralizar">
+                                <li> <a href="#"><img src="Icones/Menu/instagram.svg" width="30" height="30"></a></li>
+                                <li> <a href="#"><img src="Icones/Menu/facebook.svg" width="30" height="30"></a></li>
+                                <li> <a href="#"><img src="Icones/Menu/youtube.svg" width="30" height="30"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service_box">
+                        <div class="icon_pas flex_box y_centralizar x_centralizar" style="--i: url(../Imagens/Carousel/imagem2.jpg)">
+                        </div>
+                        <div class="content">
+                            <h1>#######</h1>
+                            <ul class="icons_social_pas flex_box y_centralizar x_centralizar">
+                                <li> <a href="#"><img src="Icones/Menu/instagram.svg" width="30" height="30"></a></li>
+                                <li> <a href="#"><img src="Icones/Menu/facebook.svg" width="30" height="30"></a></li>
+                                <li> <a href="#"><img src="Icones/Menu/youtube.svg" width="30" height="30"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="flex_box">
+            <img class="logo_rodape" src="Imagens/logo_fim.png" width="220" height="100" />
+
+            <article>
+                <ul class="icons_social flex_box x_centralizar y_centralizar">
+                    <li> <a href="#"><img src="Icones/Rodapé/instagram.svg" width="30" height="30"></a></li>
+                    <li> <a href="#"><img src="Icones/Rodapé/facebook_rodape.svg" width="30" height="30"></a></li>
+                    <li> <a href="#"><img src="Icones/Rodapé/youtube.svg" width="30" height="30"></a></li>
+                </ul>
+            </article>
+
+            <article class="informacao flex_box x_centralizar y_centralizar">
+                <a href="index.html">
+                    <h3>Home</h3>
+                </a>
+                <a href="Videos.html">
+                    <h3>Videos</h3>
+                </a>
+                <a href="Fotos.html">
+                    <h3>Fotos</h3>
+                </a>
+                <a href="Endereco.html">
+                    <h3>Endereços</h3>
+                </a>
+            </article>
+            <h2 class="autor">@2021 VNS | All Rights Reserved</h2>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
